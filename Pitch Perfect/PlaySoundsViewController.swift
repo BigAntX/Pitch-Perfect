@@ -27,11 +27,11 @@ class PlaySoundsViewController: UIViewController {
 //            print("the filePath is empty")
 //        }
         
-        audioPlayer = AVAudioPlayer(contentsOfURL: receivedAudio.filePathUrl, error: nil)
+        audioPlayer = try! AVAudioPlayer(contentsOfURL: receivedAudio.filePathUrl)
         audioPlayer.enableRate = true
         
         audioEngine = AVAudioEngine()
-        audioFile = AVAudioFile(forReading: receivedAudio.filePathUrl, error: nil)
+        audioFile = try! AVAudioFile(forReading: receivedAudio.filePathUrl)
     }
 
     override func didReceiveMemoryWarning() {
@@ -65,10 +65,10 @@ class PlaySoundsViewController: UIViewController {
         audioEngine.stop()
         audioEngine.reset()
         
-        var audioPlayerNode = AVAudioPlayerNode()
+        let audioPlayerNode = AVAudioPlayerNode()
         audioEngine.attachNode(audioPlayerNode)
         
-        var changePintchEffect = AVAudioUnitTimePitch()
+        let changePintchEffect = AVAudioUnitTimePitch()
         changePintchEffect.pitch = pitch
         audioEngine.attachNode(changePintchEffect)
         
@@ -76,7 +76,7 @@ class PlaySoundsViewController: UIViewController {
         audioEngine.connect(changePintchEffect, to: audioEngine.outputNode, format: nil)
         
         audioPlayerNode.scheduleFile(audioFile, atTime: nil, completionHandler: nil)
-        audioEngine.startAndReturnError(nil)
+        try! audioEngine.start()
         
         audioPlayerNode.play()
     }
