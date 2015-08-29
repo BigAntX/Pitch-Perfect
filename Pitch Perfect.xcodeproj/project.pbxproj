@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C71149491B91D80C0067BBAD /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = C71149481B91D80C0067BBAD /* README.md */; settings = {ASSET_TAGS = (); }; };
 		C7429B061B91557800B1F898 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7429B051B91557800B1F898 /* PlaySoundsViewController.swift */; };
 		C7429B081B915E2F00B1F898 /* movie_quote.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C7429B071B915E2F00B1F898 /* movie_quote.mp3 */; };
 		C7429B0A1B919BEE00B1F898 /* RecordedAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7429B091B919BEE00B1F898 /* RecordedAudio.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C71149481B91D80C0067BBAD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C7429B051B91557800B1F898 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
 		C7429B071B915E2F00B1F898 /* movie_quote.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = movie_quote.mp3; sourceTree = "<group>"; };
 		C7429B091B919BEE00B1F898 /* RecordedAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordedAudio.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 		C7E708B11B8E00B40067422F = {
 			isa = PBXGroup;
 			children = (
+				C71149481B91D80C0067BBAD /* README.md */,
 				C7E708BC1B8E00B50067422F /* Pitch Perfect */,
 				C7E708D21B8E00B50067422F /* Pitch PerfectTests */,
 				C7E708BB1B8E00B50067422F /* Products */,
@@ -225,6 +228,7 @@
 			files = (
 				C7429B0A1B919BEE00B1F898 /* RecordedAudio.swift in Sources */,
 				C7E708C21B8E00B50067422F /* RecordSoundsViewController.swift in Sources */,
+				C71149491B91D80C0067BBAD /* README.md in Sources */,
 				C7429B061B91557800B1F898 /* PlaySoundsViewController.swift in Sources */,
 				C7E708C01B8E00B50067422F /* AppDelegate.swift in Sources */,
 			);
